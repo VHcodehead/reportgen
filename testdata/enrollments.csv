@@ -1,0 +1,16 @@
+employee_id,name,department,plan,monthly_premium,employer_contribution,months_enrolled,status
+1001,A. Reyes,Engineering,PPO Silver,612.40,430.00,12,active
+1002,B. Chen,Engineering,HDHP Bronze,388.15,330.00,12,active
+1003,C. Okafor,Engineering,PPO Gold,845.00,560.00,9,active
+1004,D. Novak,Operations,PPO Silver,612.40,430.00,12,active
+1005,E. Silva,Operations,HDHP Bronze,388.15,330.00,4,terminated
+1006,F. Haddad,Operations,PPO Silver,612.40,430.00,12,active
+1007,G. Lindqvist,Finance,PPO Gold,845.00,560.00,12,active
+1008,H. Mbeki,Finance,HDHP Bronze,388.15,330.00,7,active
+1009,I. Tanaka,Support,PPO Silver,612.40,430.00,12,active
+1010,J. Kowalski,Support,HDHP Bronze,388.15,330.00,11,active
+1011,K. Duarte,Support,PPO Gold,845.00,560.00,3,waived
+1012,L. Petrov,Engineering,PPO Silver,612.40,430.00,12,active
+1013,M. Adeyemi,Finance,PPO Silver,612.40,430.00,6,active
+1014,N. Bergstrom,Operations,PPO Gold,845.00,560.00,12,active
+1015,O. Farouk,Support,HDHP Bronze,388.15,330.00,12,active
