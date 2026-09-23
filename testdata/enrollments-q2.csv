@@ -1,0 +1,7 @@
+plan,employee_id,department,name,status,monthly_premium,employer_contribution,months_enrolled
+PPO Silver,1016,Engineering,P. Nakamura,active,612.40,430.00,3
+HDHP Bronze,1017,Support,Q. Almeida,active,388.15,330.00,3
+PPO Gold,1018,Finance,R. Osei,active,845.00,560.00,2
+PPO Silver,1019,Operations,S. Virtanen,active,612.40,430.00,3
+HDHP Bronze,1020,Engineering,T. Brennan,waived,388.15,330.00,1
+PPO Gold,1021,Support,U. Castellanos,active,845.00,560.00,3
