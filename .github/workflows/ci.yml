@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: vet and test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: go vet
+        run: go vet ./...
+
+      - name: go test
+        run: go test -race -count=1 ./...
+
+      - name: build
+        run: go build ./...
+
+      - name: smoke run (single file)
+        run: go run . -input testdata/enrollments.csv -group-by department -value monthly_premium -output out.xlsx
+
+      - name: smoke run (merge two files with different column order)
+        run: go run . testdata/enrollments.csv testdata/enrollments-q2.csv -value monthly_premium -output merged.xlsx
